@@ -1,4 +1,7 @@
 
+build
+dist
+
 minerd
 minerd.exe
 *.o
