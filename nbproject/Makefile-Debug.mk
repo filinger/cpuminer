@@ -41,7 +41,7 @@ OBJECTFILES= \
 
 
 # C Compiler Flags
-CFLAGS=
+CFLAGS=-m64 -std=gnu99 -pthread -fno-strict-aliasing
 
 # CC Compiler Flags
 CCFLAGS=
@@ -62,22 +62,22 @@ LDLIBSOPTIONS=
 
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/cpuminer: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/cpuminer ${OBJECTFILES} ${LDLIBSOPTIONS}
+	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/cpuminer ${OBJECTFILES} ${LDLIBSOPTIONS} -lcurl -ljansson -lpthread
 
 ${OBJECTDIR}/src/cpu-miner.o: src/cpu-miner.c 
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} $@.d
-	$(COMPILE.c) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/cpu-miner.o src/cpu-miner.c
+	$(COMPILE.c) -g -Wall -DHAVE_CONFIG_H -DSCRYPT_CHACHA -DSCRYPT_CHOOSE_COMPILETIME -DSCRYPT_KECCAK512 -std=gnu99 -pthread -fno-strict-aliasing -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/cpu-miner.o src/cpu-miner.c
 
 ${OBJECTDIR}/src/scrypt-jane.o: src/scrypt-jane.c 
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} $@.d
-	$(COMPILE.c) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/scrypt-jane.o src/scrypt-jane.c
+	$(COMPILE.c) -g -Wall -DHAVE_CONFIG_H -DSCRYPT_CHACHA -DSCRYPT_CHOOSE_COMPILETIME -DSCRYPT_KECCAK512 -std=gnu99 -pthread -fno-strict-aliasing -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/scrypt-jane.o src/scrypt-jane.c
 
 ${OBJECTDIR}/src/util.o: src/util.c 
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} $@.d
-	$(COMPILE.c) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/util.o src/util.c
+	$(COMPILE.c) -g -Wall -DHAVE_CONFIG_H -DSCRYPT_CHACHA -DSCRYPT_CHOOSE_COMPILETIME -DSCRYPT_KECCAK512 -std=gnu99 -pthread -fno-strict-aliasing -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/util.o src/util.c
 
 # Subprojects
 .build-subprojects:

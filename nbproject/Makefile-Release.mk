@@ -18,7 +18,7 @@ CC=gcc
 CCC=g++
 CXX=g++
 FC=gfortran
-AS=gcc
+AS=as
 
 # Macros
 CND_PLATFORM=GNU-Linux-x86
@@ -67,17 +67,17 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/cpuminer: ${OBJECTFILES}
 ${OBJECTDIR}/src/cpu-miner.o: src/cpu-miner.c 
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} $@.d
-	$(COMPILE.c) -O3 -Wall -DSCRYPT_KECCAK512 -DSCRYPT_CHACHA -DSCRYPT_CHOOSE_COMPILETIME -DHAVE_CONFIG_H -std=gnu99 -pthread -fno-strict-aliasing -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/cpu-miner.o src/cpu-miner.c
+	$(COMPILE.c) -O3 -Wall -DHAVE_CONFIG_H -DSCRYPT_CHACHA -DSCRYPT_CHOOSE_COMPILETIME -DSCRYPT_KECCAK512 -std=gnu99 -pthread -fno-strict-aliasing -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/cpu-miner.o src/cpu-miner.c
 
 ${OBJECTDIR}/src/scrypt-jane.o: src/scrypt-jane.c 
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} $@.d
-	$(COMPILE.c) -O3 -Wall -DSCRYPT_KECCAK512 -DSCRYPT_CHACHA -DSCRYPT_CHOOSE_COMPILETIME -DHAVE_CONFIG_H -std=gnu99 -pthread -fno-strict-aliasing -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/scrypt-jane.o src/scrypt-jane.c
+	$(COMPILE.c) -O3 -Wall -DHAVE_CONFIG_H -DSCRYPT_CHACHA -DSCRYPT_CHOOSE_COMPILETIME -DSCRYPT_KECCAK512 -std=gnu99 -pthread -fno-strict-aliasing -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/scrypt-jane.o src/scrypt-jane.c
 
 ${OBJECTDIR}/src/util.o: src/util.c 
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} $@.d
-	$(COMPILE.c) -O3 -Wall -DSCRYPT_KECCAK512 -DSCRYPT_CHACHA -DSCRYPT_CHOOSE_COMPILETIME -DHAVE_CONFIG_H -std=gnu99 -pthread -fno-strict-aliasing -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/util.o src/util.c
+	$(COMPILE.c) -O3 -Wall -DHAVE_CONFIG_H -DSCRYPT_CHACHA -DSCRYPT_CHOOSE_COMPILETIME -DSCRYPT_KECCAK512 -std=gnu99 -pthread -fno-strict-aliasing -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/util.o src/util.c
 
 # Subprojects
 .build-subprojects:
