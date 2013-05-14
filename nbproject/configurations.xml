@@ -16,21 +16,16 @@
         <itemPath>src/code/scrypt-jane-chacha.h</itemPath>
         <itemPath>src/code/scrypt-jane-hash.h</itemPath>
         <itemPath>src/code/scrypt-jane-hash_keccak.h</itemPath>
-        <itemPath>src/code/scrypt-jane-hash_sha256.h</itemPath>
         <itemPath>src/code/scrypt-jane-mix_chacha-avx.h</itemPath>
         <itemPath>src/code/scrypt-jane-mix_chacha-sse2.h</itemPath>
         <itemPath>src/code/scrypt-jane-mix_chacha-ssse3.h</itemPath>
         <itemPath>src/code/scrypt-jane-mix_chacha.h</itemPath>
-        <itemPath>src/code/scrypt-jane-mix_salsa-avx.h</itemPath>
-        <itemPath>src/code/scrypt-jane-mix_salsa-sse2.h</itemPath>
-        <itemPath>src/code/scrypt-jane-mix_salsa.h</itemPath>
         <itemPath>src/code/scrypt-jane-pbkdf2.h</itemPath>
         <itemPath>src/code/scrypt-jane-portable-x86.h</itemPath>
         <itemPath>src/code/scrypt-jane-portable.h</itemPath>
         <itemPath>src/code/scrypt-jane-romix-basic.h</itemPath>
         <itemPath>src/code/scrypt-jane-romix-template.h</itemPath>
         <itemPath>src/code/scrypt-jane-romix.h</itemPath>
-        <itemPath>src/code/scrypt-jane-salsa.h</itemPath>
         <itemPath>src/code/scrypt-jane-test-vectors.h</itemPath>
       </logicalFolder>
       <itemPath>src/compat.h</itemPath>
@@ -98,8 +93,6 @@
       </item>
       <item path="src/code/scrypt-jane-hash_keccak.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/code/scrypt-jane-hash_sha256.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="src/code/scrypt-jane-mix_chacha-avx.h"
             ex="false"
             tool="3"
@@ -116,18 +109,6 @@
             flavor2="0">
       </item>
       <item path="src/code/scrypt-jane-mix_chacha.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/code/scrypt-jane-mix_salsa-avx.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="src/code/scrypt-jane-mix_salsa-sse2.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="src/code/scrypt-jane-mix_salsa.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/code/scrypt-jane-pbkdf2.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -146,8 +127,6 @@
             flavor2="0">
       </item>
       <item path="src/code/scrypt-jane-romix.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/code/scrypt-jane-salsa.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/code/scrypt-jane-test-vectors.h"
             ex="false"
@@ -209,8 +188,6 @@
       </item>
       <item path="src/code/scrypt-jane-hash_keccak.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/code/scrypt-jane-hash_sha256.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="src/code/scrypt-jane-mix_chacha-avx.h"
             ex="false"
             tool="3"
@@ -227,18 +204,6 @@
             flavor2="0">
       </item>
       <item path="src/code/scrypt-jane-mix_chacha.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/code/scrypt-jane-mix_salsa-avx.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="src/code/scrypt-jane-mix_salsa-sse2.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="src/code/scrypt-jane-mix_salsa.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/code/scrypt-jane-pbkdf2.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -257,8 +222,6 @@
             flavor2="0">
       </item>
       <item path="src/code/scrypt-jane-romix.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/code/scrypt-jane-salsa.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/code/scrypt-jane-test-vectors.h"
             ex="false"
